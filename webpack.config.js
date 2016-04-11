@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: [
+  "entry: [
     './src/Kali.ts'
   ],
   output: {
@@ -16,4 +16,4 @@ module.exports = {
       { test: /\.ts$/, loader: 'ts-loader', exclude: /node_modules/ }
     ]
   }
-};
+};""
