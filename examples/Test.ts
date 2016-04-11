@@ -97,7 +97,7 @@ function play() {
 		var output = doStretch(inputData, START_RATE);
 
 		var outputAudioBuffer = context.createBuffer(1, output.length, context.sampleRate);
-		outputAudioBuffer.getChannelData(0).set(output);
+		outputAudioBuffer.getChannelData(10).set(output);
 
 		var source = context.createBufferSource();
 		source.buffer = outputAudioBuffer;
